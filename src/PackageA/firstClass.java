@@ -15,6 +15,7 @@ public class firstClass {
         if (s1.contains("fhgh")){
             System.out.println("sss");
         }
+        System.out.println("Hi, added a line in Git");
 
 
 
