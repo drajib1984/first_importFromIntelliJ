@@ -10,7 +10,7 @@ public class ReverseRightAngle {
         for(int i = rows;i>=1;i--){
             System.out.println();
             for(int j = i;j>=1;j--){
-                System.out.print(j);
+                System.out.print(" "+j);
             }
         }
     }

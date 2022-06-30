@@ -10,7 +10,7 @@ public class RightAngleTriangle {
         for(int i =1;i<=rows;i++){
             System.out.println();
             for(int j =1; j<=i;j++){
-                System.out.print(j);
+                System.out.print(" "+j);
             }
         }
     }
