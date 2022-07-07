@@ -14,6 +14,30 @@ public class exception {
         System.out.println(s.orElse("empty").toLowerCase());
     }
 
+    public static void test1(int a,int b, int[]arr){
+        try {
+            System.out.println(a/b);
+            System.out.println(arr[1]);
+        }
+        catch (ArithmeticException e){
+            System.out.println("Cannot divide by zero");
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Out of bound");
+        }
+        catch (Exception e){
+            System.out.println("Rest all other exceptions");
+        }
+        finally {
+            try{
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
         int a = 10;
         int b = 0;
@@ -24,7 +48,7 @@ public class exception {
        catch (Exception ex){
            System.out.println("Sorry, cannot be divided by zero");
            System.out.println(ex.getMessage());
-           //ex.printStackTrace();
+           ex.printStackTrace(); // most commonly used to find out the details of exception
        }
        try {
            File file = new File("1.txt");
