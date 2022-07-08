@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class ReadAndWrite {
-    void readFile() throws FileNotFoundException {
+    void readFile() throws FileNotFoundException,NullPointerException {
 
         FileInputStream fis = new FileInputStream("d:/abc.txt");
     }
