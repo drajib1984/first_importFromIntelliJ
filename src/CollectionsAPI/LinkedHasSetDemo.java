@@ -16,5 +16,6 @@ public class LinkedHasSetDemo {
         ls.add(500);
         System.out.println(ls);
 
+
     }
 }
