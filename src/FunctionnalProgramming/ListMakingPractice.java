@@ -1,12 +1,9 @@
-package functionnalProgramming;
+package FunctionnalProgramming;
 
-import OOPPractice.Person;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static functionnalProgramming.ListMakingPractice.Gender.FEMALE;
+import static FunctionnalProgramming.ListMakingPractice.Gender.FEMALE;
 
 public class ListMakingPractice {
 

@@ -1,4 +1,4 @@
-package functionnalProgramming;
+package FunctionnalProgramming;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;

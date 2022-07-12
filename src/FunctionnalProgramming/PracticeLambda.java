@@ -1,6 +1,4 @@
-package functionnalProgramming;
-
-import java.security.PrivilegedAction;
+package FunctionnalProgramming;
 
 @FunctionalInterface
 interface Cab{
