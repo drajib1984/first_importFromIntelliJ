@@ -5,12 +5,12 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-class employeeData {
+class employeedata {
     String name;
     int salary;
     String gender;
 
-    public employeeData(String name, int salary, String gender) {
+    public employeedata(String name, int salary, String gender) {
         this.name = name;
         this.salary = salary;
         this.gender = gender;
@@ -25,14 +25,14 @@ public class ConsumerDemo {
         con.accept("Welcome");
 
 
-        ArrayList<employeeData> ar= new ArrayList<>();
-        ar.add(new employeeData("Rajib",50000,"Male"));
-        ar.add(new employeeData("John",30000,"Male"));
-        ar.add(new employeeData("Mary",20000,"Female"));
-        ar.add(new employeeData("Scott",60000,"Male"));
+        ArrayList<employeedata> ar= new ArrayList<>();
+        ar.add(new employeedata("Rajib",50000,"Male"));
+        ar.add(new employeedata("John",30000,"Male"));
+        ar.add(new employeedata("Mary",20000,"Female"));
+        ar.add(new employeedata("Scott",60000,"Male"));
 
 // Calculate the bonus at 10%
-        Function<employeeData,Integer> function = i-> i.salary*10/100;
+        Function<employeedata,Integer> function = i-> i.salary*10/100;
 
 
 // Find if the bonus is greater tha 5K
@@ -41,13 +41,13 @@ public class ConsumerDemo {
 
 // List of employees with name, salary, gender
 
-        Consumer<employeeData> consumer = i->{
+        Consumer<employeedata> consumer = i->{
             System.out.println(i.name);
             System.out.println(i.salary);
             System.out.println(i.gender);
         };
 
-        for(employeeData e:ar){
+        for(employeedata e:ar){
             int bonus= function.apply(e);
 
             if(pr.test(bonus)){
